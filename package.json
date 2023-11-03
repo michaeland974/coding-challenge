@@ -1,0 +1,28 @@
+{
+  "name": "coding-challenge",
+  "version": "1.0.0",
+  "description": "Build the frontend for the given design",
+  "main": "entry.js",
+  "scripts": {
+    "watch": "webpack --watch --config webpack/webpack.config.js",
+    "build": "webpack build --config webpack/webpack.config.js",
+    "server": "webpack serve --open --mode=production --config webpack/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaeland974/coding-challenge.git"
+  },
+  "author": "Michael A.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaeland974/coding-challenge/issues"
+  },
+  "homepage": "https://github.com/michaeland974/coding-challenge#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.52.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
