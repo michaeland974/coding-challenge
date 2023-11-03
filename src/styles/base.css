@@ -1,0 +1,40 @@
+body{
+  font-family: Inter-Regular;
+  font-size: var(--fs-body-regular);
+  line-height: var(--lh-body-regular);
+}
+
+h1, h2, h3, h4, h5{
+  font-family: Inter-Bold;
+}
+
+h1{
+  font-size: var(--fs-header-1);
+  line-height: var(--lh-header-1);
+}
+
+h2{
+  font-size: var(--fs-header-2);
+  line-height: var(--lh-header-2);
+}
+
+h3{
+  font-size: var(--fs-header-3);
+  line-height: var(--lh-header-3);
+}
+
+h4{
+  font-size: var(--fs-header-4);
+  line-height: var(--lh-header-4);
+}
+
+h5{
+  font-size: var(--fs-header-5);
+  line-height: var(--lh-header-5);
+}
+
+h6{
+  font-family: Inter-Medium;
+  font-size: var(--fs-header-6);
+  line-height: var(--lh-header-6);
+}
