@@ -1,20 +1,32 @@
 const path = require("path");
 const Copy = require("copy-webpack-plugin");
 
-module.exports = {
+var config = {
 	mode: "development",
 	entry: ["./src/entry.js"],
 	output: {
 		path: path.join(__dirname, "../dist"),
-		filename: "bundle.js",
+		filename: "bundled-scripts.js",
 		clean: true,
 	},
 	plugins: [
 		new Copy({
 			patterns: [
 				{from: "assets", to: "./assets"},
-				{from: "src/styles", to: "./styles"},
-				{from: "src/index.html", to: "."}
+				{from: "src/index.html", to: "."},
+				{from: "src/styles/reset.css", to: "."},
+				{from: "src/styles/*.css", to: "bundled-styles.css",
+				 	transformAll(assets) {
+						const result = assets.reduce((accumulator, asset) => {
+							if(asset.sourceFilename !== "src/styles/reset.css"){
+								const content = asset.data;
+								accumulator = `${accumulator}${content}\n`;
+							}
+							return accumulator;
+						}, "");
+						return result;
+					},
+				},
 			]
 		}),
 	],
@@ -23,3 +35,5 @@ module.exports = {
 		ignored: "**/node_modules"
 	}
 };
+
+module.exports = [config];
