@@ -1,0 +1,57 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--white);
+  color: var(--navy);
+  font-size: var(--fs-body-large);
+  font-family: Inter-Medium;
+}
+
+header > .logo{
+  aspect-ratio: 13/5;
+}
+
+.nav-list .icon{
+  height: 20px;
+  width: 20px;
+  /* filter used so icon stroke color can match var(--navy) */
+  filter: invert(9%) sepia(36%) saturate(7067%) hue-rotate(217deg) brightness(92%) contrast(104%);
+}
+
+.nav-list a{
+  display: flex;
+  gap: 0.8rem;
+}
+
+#responsive-wrapper{
+  display: none;
+}
+
+@media screen and (min-width: 767px) {
+  #responsive-wrapper{
+    display: flex;
+  }
+}
+
+[data-icon="home"] {
+  background-image: url("../assets/icons/nav/home.svg");
+}
+
+[data-icon="records"] {
+  background-image: url("../assets/icons/nav/records.svg");
+}
+
+[data-icon="music"] {
+  background-image: url("../assets/icons/nav/music-note.svg");
+  width: 21px !important;
+}
+
+[data-icon="artists"] {
+  background-image: url("../assets/icons/nav/artists.svg");
+}
+
+[data-icon="concerts"] {
+  background-image: url("../assets/icons/nav/calendar.svg");
+}
