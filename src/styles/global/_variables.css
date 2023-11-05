@@ -48,4 +48,6 @@ body{
   --lh-header-4: 40px;
   --lh-header-5: 32px;
   --lh-header-6: 24px;
+
+  --z-index-sticky: -1;
 }

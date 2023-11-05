@@ -42,3 +42,37 @@ h6{
 .icon{
   display: block;
 }
+
+.action-button{
+  font-family: Inter-Regular;
+  font-size: var(--fs-body-regular);
+  background: var(--pale-green);
+  color: var(--green);
+  border-radius: 2px;
+  height: 40px;
+  width: 168px;
+  position: relative;
+  z-index: 1;
+} 
+
+.action-button:hover{
+  color: white;
+}
+
+.action-button:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.action-button::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: var(--green);
+  z-index: var(--z-index-sticky);
+  transition: transform .4s ease;
+}
