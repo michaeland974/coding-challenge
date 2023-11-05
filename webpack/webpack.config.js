@@ -14,11 +14,11 @@ var config = {
 			patterns: [
 				{from: "assets", to: "./assets"},
 				{from: "src/index.html", to: "."},
-				{from: "src/styles/reset.css", to: "."},
-				{from: "src/styles/*.css", to: "bundled-styles.css",
+				{from: "src/styles/global/reset.css", to: "."},
+				{from: "src/styles/**/*.css", to: "bundled-styles.css",
 				 	transformAll(assets) {
 						const result = assets.reduce((accumulator, asset) => {
-							if(asset.sourceFilename !== "src/styles/reset.css"){
+							if(asset.sourceFilename !== "src/styles/global/reset.css"){
 								const content = asset.data;
 								accumulator = `${accumulator}${content}\n`;
 							}
@@ -33,7 +33,12 @@ var config = {
 	watchOptions: {
 		aggregateTimeout: 600,
 		ignored: "**/node_modules"
-	}
+	},
+	performance: {
+		hints: false,
+		maxEntrypointSize: 512000,
+		maxAssetSize: 512000
+	},
 };
 
 module.exports = [config];
