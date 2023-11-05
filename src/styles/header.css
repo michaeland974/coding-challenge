@@ -3,10 +3,14 @@ header{
   justify-content: space-between;
   align-items: center;
 
-  background-color: var(--white);
   color: var(--navy);
   font-size: var(--fs-body-large);
   font-family: Inter-Medium;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  width: 100vw;
+  padding: 0.5em 1em 0.5em 1em;
 }
 
 header > .logo{
@@ -23,6 +27,7 @@ header > .logo{
 .nav-list a{
   display: flex;
   gap: 0.8rem;
+  font-size: var(--fs-body-large);
 }
 
 #responsive-wrapper{
