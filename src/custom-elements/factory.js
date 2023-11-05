@@ -9,7 +9,7 @@ export const CustomElementFactory = {
         constructor(){
           super();
           const content = template.content.cloneNode(true);
-          this.innerHTML = content;
+          this.append(content);
         }
       }
     );
