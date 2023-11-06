@@ -8,8 +8,6 @@ const MobileNavBar = Factory.createElement(`
             aria-controls="mobile-nav-bar"
             aria-expanded="false">
       <span class="line"></span>
-      <span class="line"></span>
-      <span class="line"></span>
     </button>
   </nav-bar>
 `);
