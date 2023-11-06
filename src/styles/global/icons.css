@@ -1,0 +1,21 @@
+
+[data-icon="home"] {
+  background-image: url("../assets/icons/nav/home.svg");
+}
+
+[data-icon="records"] {
+  background-image: url("../assets/icons/nav/records.svg");
+}
+
+[data-icon="music"] {
+  background-image: url("../assets/icons/nav/music-note.svg");
+  width: 21px !important;
+}
+
+[data-icon="artists"] {
+  background-image: url("../assets/icons/nav/artists.svg");
+}
+
+[data-icon="concerts"] {
+  background-image: url("../assets/icons/nav/calendar.svg");
+}
