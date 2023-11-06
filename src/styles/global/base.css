@@ -44,13 +44,16 @@ h6{
 }
 
 .action-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: Inter-Regular;
   font-size: var(--fs-body-regular);
   background: var(--pale-green);
   color: var(--green);
   border-radius: 2px;
   height: 40px;
-  width: 168px;
+  width: clamp(120px, 168px, 168px);
   position: relative;
   z-index: 1;
 } 
