@@ -19,6 +19,7 @@ header .logo{
   min-width: 94px;
   aspect-ratio: 13/5;
   object-fit: contain;
+  z-index: var(--z-index-fixed);
 }
 
 nav-bar{
@@ -48,3 +49,4 @@ nav-bar{
 .responsive-wrapper{
   display: none;
 }
+
