@@ -2,6 +2,7 @@ body{
   font-family: Inter-Regular;
   font-size: var(--fs-body-regular);
   line-height: var(--lh-body-regular);
+  z-index: var(--z-index-main-content);
 }
 
 h1, h2, h3, h4, h5{
@@ -34,9 +35,8 @@ h5{
 }
 
 h6{
-  font-family: Inter-Medium;
   font-size: var(--fs-header-6);
-  line-height: var(--lh-header-6);
+  font-family: Inter-Regular;
 }
 
 .icon{
@@ -55,7 +55,7 @@ h6{
   height: 40px;
   width: clamp(120px, 168px, 168px);
   position: relative;
-  z-index: 1;
+  z-index: var(--z-index-modal);
 } 
 
 .action-button:hover{
@@ -76,6 +76,6 @@ h6{
   top: 0; right: 0; bottom: 0; left: 0;
   inset: 0 0 0 0;
   background: var(--green);
-  z-index: var(--z-index-sticky);
+  z-index: -1;
   transition: transform .4s ease;
 }

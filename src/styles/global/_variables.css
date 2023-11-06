@@ -47,8 +47,10 @@ body{
   --lh-header-3: 48px;
   --lh-header-4: 40px;
   --lh-header-5: 32px;
-  --lh-header-6: 24px;
+  --lh-header-6: 16px;
 
-  --z-index-sticky: -1;
-  --z-index-fixed: 2;
+  --z-index-behind: -5;
+  --z-index-main-content: 1;
+  --z-index-modal: 2;
+  --z-index-fixed: 3;
 }
