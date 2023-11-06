@@ -1,0 +1,17 @@
+#social-links{
+  --filtered-white: invert(93%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);
+  --filrtered-navy: invert(13%) sepia(29%) saturate(4418%) hue-rotate(206deg) brightness(95%) contrast(115%);
+}
+
+#social-links .icon{
+  height: 24px;
+  width: 24px;
+  filter: var(--filtered-white);
+  transition: all .2s ease-in-out;
+}
+
+#social-links .icon:hover{
+  transform: scale(1.15);
+}
+
+
