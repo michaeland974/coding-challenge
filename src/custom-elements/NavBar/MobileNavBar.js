@@ -18,8 +18,10 @@ customElements.define("mobile-nav-bar", MobileNavBar);
 
 const toggle = document.querySelector("#bar-toggle");
 const navLinks = document.querySelector("#mobile-nav-bar .link-group");
+const content = document.querySelector("#mobile-nav-bar");
 
 toggle.addEventListener("click", () => {
   toggle.ariaExpanded = (toggle.ariaExpanded !== "true");
   navLinks.ariaExpanded = (navLinks.ariaExpanded !== "true");
+  content.ariaExpanded = (content.ariaExpanded !== "true");
 });

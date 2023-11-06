@@ -5,10 +5,11 @@ header{
   justify-content: space-between;
   align-items: center;
 
+  background-color: var(--white);
   color: var(--navy);
   font-family: Inter-Medium;
   position: fixed;
-  z-index: var(--z-index-fixed);
+  z-index: var(--z-index-modal);
   left: 0;
   width: 100vw;
   padding: 0.5em 1em 0.5em 1em;
@@ -47,20 +48,3 @@ nav-bar{
 .responsive-wrapper{
   display: none;
 }
-/* 
-@media screen and (min-width: 770px) {
-  .responsive-wrapper{
-    display: flex;
-  }
-  .mobile-only, 
-  mobile-nav-bar{
-    display: none;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .link-group,
-  .link-list{
-    gap: 1rem;
-  }
-} */
