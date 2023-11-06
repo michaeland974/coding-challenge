@@ -15,13 +15,33 @@ var config = {
 				{from: "assets", to: "./assets"},
 				{from: "src/index.html", to: "."},
 				{from: "src/styles/global/reset.css", to: "."},
-				{from: "src/styles/**/*.css", to: "bundled-styles.css",
+				{from: "src/styles/global/*.css", to: "bundled-global-styles.css",
 				 	transformAll(assets) {
 						const result = assets.reduce((accumulator, asset) => {
 							if(asset.sourceFilename !== "src/styles/global/reset.css"){
 								const content = asset.data;
 								accumulator = `${accumulator}${content}\n`;
 							}
+							return accumulator;
+						}, "");
+						return result;
+					},
+				},
+				{from: "src/styles/Header/*.css", to: "bundled-header-styles.css",
+				 	transformAll(assets) {
+						const result = assets.reduce((accumulator, asset) => {
+							const content = asset.data;
+							accumulator = `${accumulator}${content}\n`;
+							return accumulator;
+						}, "");
+						return result;
+					},
+				},
+				{from: "src/styles/Footer/*.css", to: "bundled-footer-styles.css",
+				 	transformAll(assets) {
+						const result = assets.reduce((accumulator, asset) => {
+							const content = asset.data;
+							accumulator = `${accumulator}${content}\n`;
 							return accumulator;
 						}, "");
 						return result;
