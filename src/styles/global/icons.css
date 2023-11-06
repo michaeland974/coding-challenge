@@ -19,3 +19,19 @@
 [data-icon="concerts"] {
   background-image: url("../assets/icons/nav/calendar.svg");
 }
+
+[data-icon="instagram"] {
+  background-image: url("../assets/icons/social/instagram.svg");
+}
+
+[data-icon="youtube"] {
+  background-image: url("../assets/icons/social/youtube.svg");
+}
+
+[data-icon="twitter"] {
+  background-image: url("../assets/icons/social/twitter.svg");
+}
+
+[data-icon="facebook"] {
+  background-image: url("../assets/icons/social/facebook.svg");
+}
