@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#FFFFFF" />
     <link href="reset.css" rel="stylesheet">
-    <link href="bundled-styles.css" rel="stylesheet">
+    <link href="bundled-global-styles.css" rel="stylesheet">
+    <link href="bundled-header-styles.css" rel="stylesheet">
+    <link href="bundled-footer-styles.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../assets/icons/nav/music-note.svg">
     <script type="module" src="bundled-scripts.js" defer></script>
     <title>Synder Recordings</title>
@@ -82,7 +84,25 @@
     </main>
 
     <footer>
-
+      <div id="sitemap">
+        <div>
+          <img class="logo" src="../assets/logos/white.svg" alt="Synder Recordings Logo">
+          <business-address></business-address>
+        </div>
+        <div class="columns">
+          <explore-column class="column"></explore-column>
+          <records-column class="column"></records-column>
+          <music-column class="column"></music-column>
+          <artists-column class="column"></artists-column>
+        </div>
+      </div>
+      <div id="additional-links">
+        <ul>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#terms">Terms & Conditions</a></li>
+        </ul>
+        <social-bar></social-bar>
+      </div>
     </footer>
   </body>
 </html>
