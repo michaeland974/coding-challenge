@@ -12,7 +12,13 @@ header{
   z-index: var(--z-index-modal);
   left: 0;
   width: 100vw;
-  padding: 0.5em 1em 0.5em 1em;
+  padding: 0.5em 1rem 0.5em 1rem;
+}
+
+@media screen and (min-width: 850px) {
+  header{
+    padding: 0.5em 2rem 0.5em 2rem;
+  }
 }
 
 header .logo{
