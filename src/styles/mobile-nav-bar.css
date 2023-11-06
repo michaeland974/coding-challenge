@@ -8,7 +8,7 @@
   z-index: var(--z-index-sticky);
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 770px) {
   #mobile-nav-bar{
     display: none;
   }
@@ -92,7 +92,7 @@ button#bar-toggle[aria-expanded="true"] .line:nth-of-type(3){
   pointer-events: all;
 }
 
-#mobile-nav-bar .nav-list{
+#mobile-nav-bar .link-list{
   display: flex;
   flex-direction: column;
   gap: 1.5em;

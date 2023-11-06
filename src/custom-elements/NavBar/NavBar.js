@@ -2,7 +2,7 @@ import { CustomElementFactory as Factory } from "../factory";
 
 const NavBar = Factory.createElement(`
   <div class="link-group">
-    <ul class="nav-list">
+    <ul class="link-list">
       <li>
         <a href="#home">
           <span class="icon" role="presentation" data-icon="home"></span>
@@ -34,8 +34,8 @@ const NavBar = Factory.createElement(`
         </a>
       </li>
     </ul>
-    <button class="sign-up action-button">Sign Up</button>
+    <button class="sign-up action-button mobile-only">Sign Up</button>
   </div>
 `);
-
+    
 customElements.define("nav-bar", NavBar);
