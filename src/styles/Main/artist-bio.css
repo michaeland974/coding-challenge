@@ -1,14 +1,23 @@
-#artist-bio{
+ #artist-bio{
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--white);
   padding: 0 2em 4rem 2em;
+  height: 120vh;
+  margin-bottom: calc(10 * var(--page-spacing));
+}
+
+#artist-bio *{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 400px){
   #artist-bio{
     padding: 0 2em 0 2em;
+    margin-bottom: calc(6 * var(--page-spacing));
   }
 }
 
@@ -42,7 +51,7 @@
 }
 
 #red-hat{
-  max-height: 70%;
+  max-height: 455px;
   object-fit: contain;
   filter: drop-shadow(var(--drop-shadow));
 }

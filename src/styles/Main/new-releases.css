@@ -1,6 +1,8 @@
 #new-releases{
   --gap: 1em;
   gap: calc(3 * var(--gap));
+  height: 110vh;
+  margin-top: calc(8 * var(--page-spacing));
 }
 
 #new-releases, 
@@ -62,4 +64,3 @@
   width: 68px;
   height: 68px;
 }
-

@@ -5,6 +5,7 @@
   right: 0;
   height: 100svh;
   width: 100vw;
+  z-index: var(--z-index-fixed);
 }
 
 button#bar-toggle,

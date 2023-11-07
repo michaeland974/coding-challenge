@@ -22,6 +22,7 @@ body{
   --pale-blue: #B8BFCF;
   --box-shadow: 5px 4px 14px 2px #0000002b;
   --header-offset: 64px;
+  --page-spacing: 1rem;
 
   --icon-social-size: 24px;
   --icon-nav-size: 20px;

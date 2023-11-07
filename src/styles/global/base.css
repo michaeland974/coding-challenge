@@ -9,6 +9,13 @@ body{
   z-index: var(--z-index-main-content);
 }
 
+/* @media screen and (min-width: 400px){
+  body main > .content{
+    height: 90vh;
+    -page-spacing: 0.5rem; 
+  }
+} */
+
 body main > .content{
   margin: 4em 0 4em 0;
   height: 120vh;
@@ -87,7 +94,7 @@ p{
 
 @media (hover: hover) {
   .action-button:hover{
-    color: white;
+    color: white !important;
   }
   
   .action-button:hover::before {
@@ -108,3 +115,9 @@ p{
   z-index: -1;
   transition: transform .4s ease;
 }
+
+#artist-bio .action-button, 
+#get-in-touch .action-button{
+  z-index: 0;
+}
+
