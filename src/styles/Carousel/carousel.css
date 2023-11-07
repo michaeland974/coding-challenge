@@ -125,10 +125,9 @@
 #carousel p{
   width: 100%;
   color: var(--gray);
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  line-height: 1.2;
+  display: grid;
+  text-align: left;
+  line-height: 1;
 }
 
 #carousel h4{
@@ -138,8 +137,3 @@
 #carousel h6{
   color: var(--green);
 }
-
-/* #carousel .content{
-  display: flex;
-  border: 1px solid green;
-} */
