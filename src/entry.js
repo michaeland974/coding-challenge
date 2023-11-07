@@ -8,3 +8,4 @@ import "./custom-elements/Sitemap/Columns/Explore.js";
 import "./custom-elements/Sitemap/Columns/Records.js";
 import "./custom-elements/Sitemap/Columns/Music.js";
 import "./custom-elements/Hero/Hero.js";
+import "./custom-elements/Carousel/Carousel.js";
