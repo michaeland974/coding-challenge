@@ -21,6 +21,7 @@ body{
   --light-gray:#F6F6F6;
   --pale-blue: #B8BFCF;
   --box-shadow: 8px 44px 0px #0000000D;
+  --header-offset: 64px;
 
   --icon-social-size: 24px;
   --icon-nav-size: 20px;
@@ -40,7 +41,7 @@ body{
   --fs-header-3: 40px;
   --fs-header-4: 32px;
   --fs-header-5: 24px;
-  --fs-header-6: 20px;
+  --fs-header-6: 16px;
 
   --lh-header-1: 72px;
   --lh-header-2: 56px;

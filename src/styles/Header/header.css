@@ -12,6 +12,7 @@ header{
   z-index: var(--z-index-modal);
   left: 0;
   width: 100vw;
+  height: var(--header-offset);
   padding: 0.5em 1rem 0.5em 1rem;
 }
 
