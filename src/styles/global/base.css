@@ -9,14 +9,22 @@ body{
   z-index: var(--z-index-main-content);
 }
 
-body main > *{
-  height: 80vh;
-  width: 100%;
+body main > .content{
+  margin: 4em 0 4em 0;
+  height: 120vh;
+}
+
+@media screen and (min-width: 400px){
+  body main > .content{
+    margin: 2rem 0 2rem 0;
+    height: 90vh;
+  }
 }
 
 #scrollable{
   flex: 1;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   margin-top: var(--header-offset);
 }
 
@@ -73,13 +81,15 @@ h6{
   z-index: var(--z-index-modal);
 } 
 
-.action-button:hover{
-  color: white;
-}
-
-.action-button:hover::before {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+@media (hover: hover) {
+  .action-button:hover{
+    color: white;
+  }
+  
+  .action-button:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 }
 
 .action-button::before {

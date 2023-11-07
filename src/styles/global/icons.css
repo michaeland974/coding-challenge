@@ -39,3 +39,11 @@
 [data-icon="play"] {
   background-image: url("../assets/icons/basic/triangle-play.svg");
 }
+
+[data-icon="left"] {
+  background-image: url("../assets/icons/basic/arrow-left.svg");
+}
+
+[data-icon="right"] {
+  background-image: url("../assets/icons/basic/arrow-right.svg");
+}
