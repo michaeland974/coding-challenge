@@ -1,0 +1,64 @@
+#new-releases{
+  --gap: 1em;
+  gap: calc(3 * var(--gap));
+}
+
+#new-releases, 
+#new-releases .desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;
+
+  background-color: var(--light-gray);
+}
+
+#new-releases .desc{
+  gap: var(--gap);
+  align-content: center;
+}
+
+#new-releases h3{
+  color: var(--navy);
+}
+
+#new-releases p{
+  color: var(--gray);
+  text-align: center;
+  width: 50%;
+}
+
+#new-releases .card{
+  background-color: green;
+  width: 500px;
+  height: 300px;
+  box-shadow: var(--box-shadow);
+}
+
+#new-releases .button-group{
+  display: flex;
+  gap: calc(2 * var(--gap));
+}
+
+#new-releases .icon{
+  height: 16px;
+  width: 16px;
+  filter: invert(5%) sepia(96%) saturate(7481%) hue-rotate(212deg) brightness(83%) contrast(110%);
+}
+
+#new-releases button{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+#new-releases button .background{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--pale-blue);
+  border-radius: 50%;
+  width: 68px;
+  height: 68px;
+}

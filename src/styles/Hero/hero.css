@@ -59,6 +59,7 @@ hero-banner > .content{
   color: var(--white);
   width: min(50%, 530px);
   margin-left: 15%;
+  margin-bottom: var(--header-offset);
 }
 
 @media screen and (max-width: 770px) {
