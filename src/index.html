@@ -10,6 +10,7 @@
     <link href="bundled-footer-styles.css" rel="stylesheet">
     <link href="bundled-hero-styles.css" rel="stylesheet">
     <link href="bundled-main-styles.css" rel="stylesheet">
+    <link href="bundled-carousel-styles.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../assets/icons/nav/music-note.svg">
     <script type="module" src="bundled-scripts.js" defer></script>
     <title>Synder Recordings</title>
@@ -32,12 +33,12 @@
           <hero-banner></hero-banner>
         </section>
 
-        <section id="artist-bio">
+        <section id="artist-bio" class="content">
           <div class="wrapper">
             <div class="container">
               <img  loading="lazy" id="red-hat" src="../assets/images/red-hat.webp" alt="Musical Artist">
             </div>
-            <div id="desc">
+            <div class="desc">
               <h3>Brent Faiyaz, So Far Gone</h3>
               <p>Faiyaz began uploading his music onto SoundCloud in 2014 and moved from his hometown Columbia, Maryland to Charlotte, North Carolina before ultimately settling in Los Angeles, California to further his music career. 
                 Faiyaz began uploading his music onto SoundCloud in 2014 and moved from his hometown Columbia, Maryland to Charlotte, North Carolina before ultimately settling in Los Angeles, California to further his music career.  On January 19, 2015, he released his debut single "Allure". On June 1, 2016, Faiyaz released "Invite Me", the lead single from his upcoming debut EP. On September 19, 2016, his 21st birthday, the EP entitled A.M. 
@@ -48,25 +49,27 @@
           </div>
         </section>
 
-        <section id="new-releases">
-          <h3></h3>
-          <p></p>
+        <section id="new-releases" class="content">
+          <div class="desc">
+            <h3>New Releases</h3>
+            <p>New albums every single month, check out the newest & best from Snyder Recording artist, now available on Apple Music & Spotify.</p>
+          </div>
 
           <section id="carousel-container" class="half-screen">
-            <div id="carousel">
-              <div class="card">
-                <img>
-                <div class="content">
-    
-                </div>
-              </div>
-            </div>
+            <carousel-row id="carousel"></carousel-row>
             <div class="button-group">
-              <button aria-controls="carousel"></button>
-              <button aria-controls="carousel"></button>
+              <button aria-controls="carousel" data-carousel="prev">
+                <span class="background">
+                  <span class="icon" data-icon="left"></span>
+                </span>
+              </button>
+              <button aria-controls="carousel" data-carousel="next">
+                <span class="background">
+                  <span class="icon" data-icon="right"></span>
+                </span>
+              </button>
             </div>
           </section>
-
         </section>
 
         <map class="half-screen"></map>
