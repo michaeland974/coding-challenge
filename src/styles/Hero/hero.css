@@ -1,0 +1,93 @@
+@keyframes ZoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+hero-banner{
+  --xl-screen-scale: 1.58;
+  --on-load-animation: 1.5s cubic-bezier(0, 1, 1, 1) 0.3s;
+
+  height: 95vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+#background-zoom-wrapper{
+  transform: scale(1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/marcela-laskoski-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: var(--z-index-behind);
+}
+
+.zoom{
+  animation: ZoomInOut var(--on-load-animation);
+}
+
+@media screen and (min-width: 1500px){
+  #background-zoom-wrapper{
+    --image-width: calc(1270px * var(--xl-screen-scale));
+    --image-height: calc(656px * var(--xl-screen-scale));
+    background-size: var(--image-width) var(--image-height);
+  }
+} 
+
+hero-banner > .content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1em;
+  color: var(--white);
+  width: min(50%, 530px);
+  margin-left: 15%;
+}
+
+@media screen and (max-width: 770px) {
+  hero-banner > .content > p{
+    background-color: #001d5dc3;
+    border-radius: 2px;
+    padding: 0.5em;
+  }
+}
+
+hero-banner .icon{
+  height: 20px;
+  width: 20px;
+  filter: invert(5%) sepia(96%) saturate(7481%) hue-rotate(212deg) brightness(83%) contrast(110%);
+}
+
+button#play{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+button#play .background{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--white);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
