@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FFFFFF" />
+    <link href="reset.css" rel="stylesheet">
+    <link href="bundled-global-styles.css" rel="stylesheet">
+    <link href="bundled-header-styles.css" rel="stylesheet">
+    <link href="bundled-footer-styles.css" rel="stylesheet">
+    <link href="bundled-hero-styles.css" rel="stylesheet">
+    <link href="bundled-main-styles.css" rel="stylesheet">
+    <link href="bundled-carousel-styles.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../assets/icons/nav/music-note.svg">
+    <script type="module" src="bundled-scripts.js" defer></script>
+    <title>Synder Recordings</title>
+  </head>
+  <body>   
+    <header>
+      <a href="#home">
+        <img class="logo" src="../assets/logos/blue.svg" alt="Synder Recordings Logo">
+      </a>
+      <mobile-nav-bar></mobile-nav-bar>
+      <nav-bar class="responsive-wrapper" role="navigation"></nav-bar>
+      <button class="sign-up action-button responsive-wrapper">
+        Sign Up
+      </button>
+    </header>
+    
+    <div id="scrollable">
+      <main>
+        <section>
+          <hero-banner></hero-banner>
+        </section>
+
+        <section id="artist-bio" class="content">
+          <div class="wrapper">
+            <div class="container">
+              <img  loading="lazy" id="red-hat" src="../assets/images/red-hat.webp" alt="Musical Artist">
+            </div>
+            <div class="desc">
+              <h3>Brent Faiyaz, So Far Gone</h3>
+              <p>Faiyaz began uploading his music onto SoundCloud in 2014 and moved from his hometown Columbia, Maryland to Charlotte, North Carolina before ultimately settling in Los Angeles, California to further his music career. 
+                Faiyaz began uploading his music onto SoundCloud in 2014 and moved from his hometown Columbia, Maryland to Charlotte, North Carolina before ultimately settling in Los Angeles, California to further his music career.  On January 19, 2015, he released his debut single "Allure". On June 1, 2016, Faiyaz released "Invite Me", the lead single from his upcoming debut EP. On September 19, 2016, his 21st birthday, the EP entitled A.M. 
+                Paradox was released and received with positive reviews from music critics.  On January 26, 2017, Sonder released their debut EP Into.
+              </p>
+              <button class="action-button" class="learn-more">Learn More</button>
+            </div>
+          </div>
+        </section>
+
+        <section id="new-releases" class="content">
+          <div class="desc">
+            <h3>New Releases</h3>
+            <p>New albums every single month, check out the newest & best from Snyder Recording artist, now available on Apple Music & Spotify.</p>
+          </div>
+
+          <section id="carousel-container">
+            <carousel-row id="carousel"></carousel-row>
+            <div class="button-group">
+              <button aria-controls="carousel" data-carousel="prev">
+                <span class="background">
+                  <span class="icon" data-icon="left"></span>
+                </span>
+              </button>
+              <button aria-controls="carousel" data-carousel="next">
+                <span class="background">
+                  <span class="icon" data-icon="right"></span>
+                </span>
+              </button>
+            </div>
+          </section>
+        </section>
+
+        <section id="get-in-touch" class="content">
+          <div class="form-container">
+            <h3>Get In Touch</h3>
+            <p>New albums every single month, check out the newest & best from Snyder Recording artist, now available on Apple Music & Spotify.</p>
+            <contact-form action="/my-form" method="post"></contact-form>
+          </div>
+          <div class="image-container">
+            <img  loading="lazy" id="harry" src="../assets/images/harry-swales-unsplash.jpg" alt="Music Artist, Harry">
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div id="sitemap">
+          <div id="business-column">
+            <img class="logo" src="../assets/logos/white.svg" alt="Synder Recordings Logo">
+            <business-address></business-address>
+          </div>
+          <explore-column class="column"></explore-column>
+          <records-column class="column"></records-column>
+          <music-column class="column"></music-column>
+          <artists-column class="column"></artists-column>
+        </div>
+        <div id="additional-links">
+          <ul>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms & Conditions</a></li>
+          </ul>
+          <social-bar></social-bar>
+        </div>
+      </footer>
+    </div>
+  
+  </body>
+</html>

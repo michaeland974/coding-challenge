@@ -1,0 +1,116 @@
+footer{
+  --gap: 1em;
+
+  background-color: var(--navy);
+  color: var(--white);
+  font-size: var(--fs-body-large);
+  padding: var(--gap);
+}
+
+footer, 
+#sitemap,
+#sitemap *{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sitemap{
+  width: 100%;
+  justify-content: space-between;
+  gap: var(--gap);
+  padding: calc(2 * var(--gap));
+}
+
+#sitemap > *:not(#business-column){
+  padding: var(--gap);
+  padding-top: 0;
+}
+
+footer .column{
+  font-size: var(--fs-body-regular);
+  gap: calc(0.5 *var(--gap));
+}
+
+footer .column > ul > li{
+  padding: 0.25em 0 0.25em 0;
+}
+
+#business-column{
+  padding-bottom: calc(2 * var(--gap));
+}
+
+#business-column,
+#business-column address{
+  gap: var(--gap);
+}
+
+#business-column,
+#business-column address,
+#business-column address > *{
+  align-items: flex-start;
+}
+
+#additional-links{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid var(--white);
+  gap: var(--gap);
+  padding-top: var(--gap);
+  flex: 1;
+  /* border: 1px solid red; */
+}
+
+@media screen and (min-width: 770px) {
+  #additional-links{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--gap);
+  }
+} 
+
+#additional-links > ul{
+  display: flex;
+  justify-content: space-between;
+  gap: var(--gap);
+}
+
+#social-links > ul{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: calc(1.5 * var(--gap));
+}
+
+@media screen and (min-width: 770px) {
+  #sitemap{
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  #sitemap .column,
+  #sitemap > .column > *{
+    align-items: flex-start;
+  }
+} 
+#social-links{
+  --filtered-white: invert(93%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);
+  --filrtered-navy: invert(13%) sepia(29%) saturate(4418%) hue-rotate(206deg) brightness(95%) contrast(115%);
+}
+
+#social-links .icon{
+  height: 24px;
+  width: 24px;
+  filter: var(--filtered-white);
+  transition: all .2s ease-in-out;
+}
+
+#social-links .icon:hover{
+  transform: scale(1.15);
+}
+
+
+

@@ -1,0 +1,231 @@
+@font-face {  
+  font-family: Inter-Regular;
+  src: url('./../assets/fonts/Inter-Regular.ttf'); 
+}
+@font-face {  
+  font-family: Inter-Medium;
+  src: url('./../assets/fonts/Inter-Medium.ttf'); 
+}
+@font-face {  
+  font-family: Inter-Bold;
+  src: url('./../assets/fonts/Inter-Bold.ttf'); 
+}
+
+body{
+  --navy: #001D5D;
+  --green:#42A418;
+  --pale-green: #D9F0D0;
+  --black: #000000;
+  --white: #FFFFFF;
+  --gray: #777777;
+  --light-gray:#F6F6F6;
+  --pale-blue: #B8BFCF;
+  --box-shadow: 5px 4px 14px 2px #0000002b;
+  --header-offset: 64px;
+  --page-spacing: 1rem;
+
+  --icon-social-size: 24px;
+  --icon-nav-size: 20px;
+  --icon-arrow-siz: 16px;
+  --icon-form-size: 12px;
+
+  --fs-body-large: 18px;
+  --fs-body-regular: 16px;
+  --fs-body-small: 12px;
+
+  --lh-body-large: 26px;
+  --lh-body-regular: 24px;
+  --lh-body-small: 20px;
+
+  --fs-header-1: clamp(48px, 10vw, 64px);
+  --fs-header-2: 48px;
+  --fs-header-3: 40px;
+  --fs-header-4: 32px;
+  --fs-header-5: 24px;
+  --fs-header-6: 16px;
+
+  --lh-header-1: 72px;
+  --lh-header-2: 56px;
+  --lh-header-3: 48px;
+  --lh-header-4: 40px;
+  --lh-header-5: 32px;
+  --lh-header-6: 16px;
+
+  --z-index-behind: -5;
+  --z-index-main-content: 1;
+  --z-index-modal: 2;
+  --z-index-fixed: 3;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  font-family: Inter-Regular;
+  font-size: var(--fs-body-regular);
+  line-height: var(--lh-body-regular);
+  z-index: var(--z-index-main-content);
+}
+
+/* @media screen and (min-width: 400px){
+  body main > .content{
+    height: 90vh;
+    -page-spacing: 0.5rem; 
+  }
+} */
+
+body main > .content{
+  margin: 4em 0 4em 0;
+  height: 120vh;
+}
+
+@media screen and (min-width: 400px){
+  body main > .content{
+    margin: 2rem 0 2rem 0;
+    height: 90vh;
+  }
+}
+
+#scrollable{
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: var(--header-offset);
+}
+
+h1, h2, h3, h4, h5{
+  font-family: Inter-Bold;
+}
+
+h1{
+  font-size: var(--fs-header-1);
+  line-height: var(--lh-header-1);
+}
+
+h2{
+  font-size: var(--fs-header-2);
+  line-height: var(--lh-header-2);
+}
+
+h3{
+  font-size: var(--fs-header-3);
+  line-height: var(--lh-header-3);
+}
+
+h4{
+  font-size: var(--fs-header-4);
+  line-height: var(--lh-header-4);
+}
+
+h5{
+  font-size: var(--fs-header-5);
+  line-height: var(--lh-header-5);
+}
+
+h6{
+  font-size: var(--fs-header-6);
+  font-family: Inter-Regular;
+}
+
+p{
+  font-size: 14px;
+}
+
+.icon{
+  display: block;
+}
+
+.action-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter-Regular;
+  font-size: var(--fs-body-regular);
+  background: var(--pale-green);
+  color: var(--green);
+  border-radius: 2px;
+  height: 40px;
+  width: clamp(120px, 168px, 168px);
+  position: relative;
+  z-index: var(--z-index-modal);
+} 
+
+@media (hover: hover) {
+  .action-button:hover{
+    color: white !important;
+  }
+  
+  .action-button:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
+.action-button::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: var(--green);
+  z-index: -1;
+  transition: transform .4s ease;
+}
+
+#artist-bio .action-button, 
+#get-in-touch .action-button{
+  z-index: 0;
+}
+
+
+
+[data-icon="home"] {
+  background-image: url("../assets/icons/nav/home.svg");
+}
+
+[data-icon="records"] {
+  background-image: url("../assets/icons/nav/records.svg");
+}
+
+[data-icon="music"] {
+  background-image: url("../assets/icons/nav/music-note.svg");
+  width: 21px !important;
+}
+
+[data-icon="artists"] {
+  background-image: url("../assets/icons/nav/artists.svg");
+}
+
+[data-icon="concerts"] {
+  background-image: url("../assets/icons/nav/calendar.svg");
+}
+
+[data-icon="instagram"] {
+  background-image: url("../assets/icons/social/instagram.svg");
+}
+
+[data-icon="youtube"] {
+  background-image: url("../assets/icons/social/youtube.svg");
+}
+
+[data-icon="twitter"] {
+  background-image: url("../assets/icons/social/twitter.svg");
+}
+
+[data-icon="facebook"] {
+  background-image: url("../assets/icons/social/facebook.svg");
+}
+
+[data-icon="play"] {
+  background-image: url("../assets/icons/basic/triangle-play.svg");
+}
+
+[data-icon="left"] {
+  background-image: url("../assets/icons/basic/arrow-left.svg");
+}
+
+[data-icon="right"] {
+  background-image: url("../assets/icons/basic/arrow-right.svg");
+}

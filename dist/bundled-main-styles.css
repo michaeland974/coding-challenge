@@ -1,0 +1,261 @@
+ #artist-bio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  padding: 0 2em 4rem 2em;
+  height: 120vh;
+  margin-bottom: calc(10 * var(--page-spacing));
+}
+
+#artist-bio *{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 400px){
+  #artist-bio{
+    padding: 0 2em 0 2em;
+    margin-bottom: calc(6 * var(--page-spacing));
+  }
+}
+
+#artist-bio > .wrapper{
+  display: grid;
+  grid-template-rows: auto-fit;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  max-width: 1138px;
+  max-height: 700px;
+}
+
+#artist-bio > .wrapper > *{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media screen and (min-width: 1050px) {
+  #artist-bio > .wrapper{
+    grid-template-columns: repeat(2, 50%);
+    grid-auto-flow: row;
+  }
+}
+
+#artist-bio .desc{
+  gap: 1em;
+  height: 100%;
+}
+
+#red-hat{
+  max-height: 455px;
+  object-fit: contain;
+  filter: drop-shadow(var(--drop-shadow));
+}
+
+#artist-bio h3{
+  color: var(--navy);
+}
+
+#artist-bio p{
+  color: var(--gray);
+}
+
+#learn-more{
+  z-index: var(--z-index-main-content);
+}
+#get-in-touch{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  color: var(--navy);
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  margin-top: var(--page-spacing);
+}
+
+#get-in-touch > *{
+  height: 100%;
+  padding: 0;
+}
+
+#get-in-touch > .form-container{
+  flex: 3;
+  padding: 2em;
+}
+
+#get-in-touch > .image-container{
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  height: 100% !important;
+  margin-top: calc(-1 * var(--page-spacing)); 
+}
+
+#get-in-touch .form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2em;
+}
+
+#get-in-touch .form-container contact-form *,
+#get-in-touch p{
+  color: var(--gray);
+}
+
+#get-in-touch p{
+  width: 50%;
+  font-size: var(--fs-body-large);
+}
+
+#get-in-touch .form-container textarea, 
+#get-in-touch .form-container input{
+  border: 1px solid var(--gray);
+  border-radius: 2px;
+}
+
+#get-in-touch ::placeholder {
+  opacity: 1;
+}
+
+#contacting-select select, 
+#contacting-select option{
+  font-family: Inter-Medium;
+  appearance: none;
+}
+
+#contacting-select select:hover, 
+#get-in-touch input:focus,
+#get-in-touch input:active,
+#get-in-touch textarea:hover,
+#get-in-touch input:hover{
+  border: 2px solid var(--navy);
+  color: var(--navy);
+}
+
+#get-in-touch input:hover::placeholder, 
+#get-in-touch textarea:focus{
+  color: var(--navy);
+}
+
+contact-form > *{
+  margin-bottom: 1.5em;
+}
+
+contact-form > ul{
+  display: grid;
+  grid-template-columns: none;
+  gap: 1em;
+  font-size: var(--fs-body-regular);
+}
+
+#get-in-touch input, #get-in-touch select{
+  padding: 1em 0.5em 1em 0.5em;
+}
+
+#get-in-touch label{
+  display: flex;
+  flex-direction: column;
+  font-size: var(--fs-body-regular);
+}
+
+#get-in-touch label > span{
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+#harry{
+  aspect-ratio: 2/3;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 850px) {
+  #get-in-touch{
+    flex-direction: row;
+  }
+  contact-form > ul{
+    grid-template-columns: auto auto;
+  }
+
+  contact-form{
+    width: 75%;
+  }
+}
+#new-releases{
+  --gap: 1em;
+  gap: calc(3 * var(--gap));
+  height: 110vh;
+  margin-top: calc(8 * var(--page-spacing));
+}
+
+#new-releases, 
+#new-releases .desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;
+
+  background-color: var(--light-gray);
+}
+
+#new-releases .desc{
+  gap: var(--gap);
+  align-content: center;
+}
+
+#new-releases h3{
+  color: var(--navy);
+}
+
+#new-releases p{
+  color: var(--gray);
+  text-align: center;
+  width: 50%;
+}
+
+#new-releases .card{
+  background-color: green;
+  width: 500px;
+  height: 300px;
+  box-shadow: var(--box-shadow);
+}
+
+#new-releases .button-group{
+  display: flex;
+  gap: calc(2 * var(--gap));
+}
+
+#new-releases .icon{
+  height: 16px;
+  width: 16px;
+  filter: invert(5%) sepia(96%) saturate(7481%) hue-rotate(212deg) brightness(83%) contrast(110%);
+}
+
+#new-releases button{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+#new-releases button .background{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--pale-blue);
+  border-radius: 50%;
+  width: 68px;
+  height: 68px;
+}
+
