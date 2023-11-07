@@ -7,10 +7,6 @@ footer{
   padding: var(--gap);
 }
 
-.sitemap{
-  width: 100%;
-}
-
 footer, 
 #sitemap,
 #sitemap *{
@@ -19,26 +15,40 @@ footer,
   align-items: center;
 }
 
-#sitemap, 
-#sitemap > *{
-  padding: var(--gap);
+#sitemap{
+  width: 100%;
+  justify-content: space-between;
+  gap: var(--gap);
+  padding: calc(2 * var(--gap));
 }
 
-footer .columns{
-  padding-top: var(--gap);
-  gap: calc(3 * var(--gap));
+#sitemap > *:not(#business-column){
+  padding: var(--gap);
+  padding-top: 0;
 }
 
 footer .column{
- gap: var(--gap);
+  font-size: var(--fs-body-regular);
+  gap: calc(0.5 *var(--gap));
 }
 
 footer .column > ul > li{
   padding: 0.25em 0 0.25em 0;
 }
 
-footer .column{
-  font-size: var(--fs-body-regular);
+#business-column{
+  padding-bottom: calc(2 * var(--gap));
+}
+
+#business-column,
+#business-column address{
+  gap: var(--gap);
+}
+
+#business-column,
+#business-column address,
+#business-column address > *{
+  align-items: flex-start;
 }
 
 #additional-links{
@@ -50,6 +60,7 @@ footer .column{
   border-top: 1px solid var(--white);
   gap: var(--gap);
   padding-top: var(--gap);
+  flex: 1;
 }
 
 #additional-links > ul{
@@ -64,3 +75,15 @@ footer .column{
   width: 100%;
   gap: calc(2.5 * var(--gap));
 }
+
+@media screen and (min-width: 770px) {
+  #sitemap{
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  #sitemap .column,
+  #sitemap > .column > *{
+    align-items: flex-start;
+  }
+} 
