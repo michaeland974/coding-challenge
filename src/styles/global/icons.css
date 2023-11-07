@@ -35,3 +35,7 @@
 [data-icon="facebook"] {
   background-image: url("../assets/icons/social/facebook.svg");
 }
+
+[data-icon="play"] {
+  background-image: url("../assets/icons/basic/triangle-play.svg");
+}
