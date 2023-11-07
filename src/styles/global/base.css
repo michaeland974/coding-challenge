@@ -9,9 +9,9 @@ body{
   z-index: var(--z-index-main-content);
 }
 
-body main > section{
-  width: 100%;
+body main > *{
   height: 80vh;
+  width: 100%;
 }
 
 #scrollable{

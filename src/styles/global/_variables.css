@@ -36,7 +36,7 @@ body{
   --lh-body-regular: 24px;
   --lh-body-small: 20px;
 
-  --fs-header-1: 64px;
+  --fs-header-1: clamp(48px, 10vw, 64px);
   --fs-header-2: 48px;
   --fs-header-3: 40px;
   --fs-header-4: 32px;
