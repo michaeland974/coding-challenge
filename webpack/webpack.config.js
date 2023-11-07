@@ -47,6 +47,16 @@ var config = {
 						return result;
 					},
 				},
+				{from: "src/styles/Hero/*.css", to: "bundled-hero-styles.css",
+				 	transformAll(assets) {
+						const result = assets.reduce((accumulator, asset) => {
+							const content = asset.data;
+							accumulator = `${accumulator}${content}\n`;
+							return accumulator;
+						}, "");
+						return result;
+					},
+				},
 			]
 		}),
 	],
