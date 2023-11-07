@@ -127,7 +127,7 @@
   color: var(--gray);
   display: grid;
   text-align: left;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 #carousel h4{

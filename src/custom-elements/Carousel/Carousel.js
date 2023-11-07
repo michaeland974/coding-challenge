@@ -74,7 +74,6 @@ buttons.forEach((button) => {
 
     const relativePositionOffset = 2;
     const relativePositionValue = -(newIndex - relativePositionOffset);
-    console.log(relativePositionValue);
     carousel.setAttribute("data-position", relativePositionValue);
   });
 });
