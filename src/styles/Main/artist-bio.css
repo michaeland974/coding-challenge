@@ -1,0 +1,60 @@
+#artist-bio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  padding: 0 2rem 2rem 2rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 400px) {
+  #artist-bio{
+    height: 120vh;
+  }
+}
+
+#artist-bio > .wrapper{
+  display: grid;
+  grid-template-rows: auto-fit;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  max-width: 1138px;
+}
+
+#artist-bio > .wrapper > *{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media screen and (min-width: 1050px) {
+  #artist-bio > .wrapper{
+    grid-template-columns: repeat(2, 50%);
+    grid-auto-flow: row;
+  }
+}
+
+#desc{
+  gap: 1em;
+  height: 100%;
+}
+
+#red-hat{
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(var(--drop-shadow));
+}
+
+#artist-bio h3{
+  color: var(--navy);
+}
+
+#artist-bio p{
+  color: var(--gray);
+}
+
+#learn-more{
+  z-index: var(--z-index-main-content);
+}
