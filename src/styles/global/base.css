@@ -1,4 +1,7 @@
 body{
+  display: flex;
+  flex-direction: column;
+
   font-family: Inter-Regular;
   font-size: var(--fs-body-regular);
   line-height: var(--lh-body-regular);

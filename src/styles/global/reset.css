@@ -24,7 +24,7 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-body {
+body{
   min-height: 100svh;
 	font-size: 14px;
   text-rendering: optimizeSpeed;
