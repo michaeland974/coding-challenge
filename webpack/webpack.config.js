@@ -57,6 +57,26 @@ var config = {
 						return result;
 					},
 				},
+				{from: "src/styles/Main/*.css", to: "bundled-main-styles.css",
+				 	transformAll(assets) {
+						const result = assets.reduce((accumulator, asset) => {
+							const content = asset.data;
+							accumulator = `${accumulator}${content}\n`;
+							return accumulator;
+						}, "");
+						return result;
+					},
+				},
+				{from: "src/styles/Carousel/*.css", to: "bundled-carousel-styles.css",
+				 	transformAll(assets) {
+						const result = assets.reduce((accumulator, asset) => {
+							const content = asset.data;
+							accumulator = `${accumulator}${content}\n`;
+							return accumulator;
+						}, "");
+						return result;
+					},
+				},
 			]
 		}),
 	],
