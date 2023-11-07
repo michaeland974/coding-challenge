@@ -2,45 +2,50 @@ import { CustomElementFactory as Factory } from "../factory";
 
 const Carousel = Factory.createElement(`
   <div class="card">
-    <img>
+    <img  loading="lazy" id="soul" src="../assets/images/album-cover.jpg" alt="Album Cover">
     <div class="content">
-      <h4></h4>
-      <h6><h6>
-      <p></p>
+      <h4>Trapsoul</h4>
+      <h6>BRYSON TILLER</h6>
+      <p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.
+      </p>
     </div>
   </div>
   <div class="card">
-    <img>
-    <div class="content">
-      <h4></h4>
-      <h6><h6>
-      <p></p>
-    </div>
-  </div> 
-  <div class="card" data-active>
-    <img>
-    <div class="content">
-      <h4></h4>
-      <h6><h6>
-      <p></p>
-    </div>
-  </div> 
-  <div class="card">
-    <img>
-    <div class="content">
-      <h4></h4>
-      <h6><h6>
-      <p></p>
-    </div>
-  </div> 
-  <div class="card">
-    <img>
-    <div class="content">
-      <h4></h4>
-      <h6><h6>
-      <p></p>
-    </div>
-  </div> 
+  <img  loading="lazy" id="soul" src="../assets/images/album-cover.jpg" alt="Album Cover">
+  <div class="content">
+    <h4>Trapsoul</h4>
+    <h6>BRYSON TILLER</h6>
+    <p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.
+    </p>
+  </div>
+</div>
+<div class="card" data-active>
+<img  loading="lazy" id="soul" src="../assets/images/album-cover.jpg" alt="Album Cover">
+<div class="content">
+  <h4>Trapsoul</h4>
+  <h6>BRYSON TILLER</h6>
+  <p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.
+  </p>
+</div>
+</div>
+<div class="card">
+<img  loading="lazy" id="soul" src="../assets/images/album-cover.jpg" alt="Album Cover">
+<div class="content">
+  <h4>Trapsoul</h4>
+  <h6>BRYSON TILLER</h6>
+  <p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.
+  </p>
+</div>
+</div>
+<div class="card">
+<img  loading="lazy" id="soul" src="../assets/images/album-cover.jpg" alt="Album Cover">
+<div class="content">
+  <h4>Trapsoul</h4>
+  <h6>BRYSON TILLER</h6>
+  <p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.
+  </p>
+</div>
+</div>
 `);
 
 customElements.define("carousel-row", Carousel);

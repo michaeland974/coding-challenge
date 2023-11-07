@@ -26,27 +26,32 @@
 
 @media screen and (min-width: 550px){
   #carousel{
-    --card-width: min(75vw, 570px);
+    --card-width: min(75vw, 550px);
   }
 }
 @media screen and (min-width: 750px){
   #carousel{
-    --card-width: min(50vw, 570px);
+    --card-width: min(50vw, 550px);
   }
 }
 @media screen and (min-width: 1000px){
   #carousel{
-    --card-width: min(30vw, 570px);
+    --card-width: min(33vw, 550px);
   }
 }
 
 #carousel .card{
-  background-color: green;
+  display: flex;
+
+  background-color: var(--white);
   width: var(--card-width);
-  height: 300px;
+  height: clamp(225px, 10vw, 325px);
   opacity: 0.5;
+  gap: 1em;
+  align-items: flex-start;
   box-shadow: var(--box-shadow);
   transition: var(--transition);
+  padding: 1.5em 0.75em 1em 0.75em;
 
   position: relative;
   top: 0;
@@ -55,6 +60,15 @@
 
 #carousel .card[data-active]{
   opacity: 1;
+}
+
+#carousel .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 0.5em;
 }
 
 #carousel[data-position="-2"]{ --position: -2; }
@@ -102,3 +116,30 @@
   }
 }
 
+#new-releases #soul{
+  max-width: 35%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+#carousel p{
+  width: 100%;
+  color: var(--gray);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  line-height: 1.2;
+}
+
+#carousel h4{
+  color: var(--navy);
+}
+
+#carousel h6{
+  color: var(--green);
+}
+
+/* #carousel .content{
+  display: flex;
+  border: 1px solid green;
+} */
