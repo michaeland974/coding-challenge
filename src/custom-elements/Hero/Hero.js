@@ -1,7 +1,7 @@
 import { CustomElementFactory as Factory } from "../factory";
 
 const HeroBanner = Factory.createElement(`
-  <div id="background-zoom-wrapper" class="zoom"></div>
+  <div id="background-zoom-wrapper" class="scroll-spy"></div>
   <div class="content">
     <h1>A.M. Paradox</h1>
     <p>Christopher Brent Wood, better known by his stage name Brent Faiyaz, is
@@ -17,3 +17,17 @@ const HeroBanner = Factory.createElement(`
 `);
 
 customElements.define("hero-banner", HeroBanner);
+
+const selected = document.querySelectorAll(".scroll-spy")[0];
+const observer = new IntersectionObserver((elements) => {
+  elements.forEach((el) => {
+    if(el.isIntersecting){
+      el.target.classList.add("zoom");
+    }
+    else{
+      el.target.classList.remove("zoom");
+    }
+  });
+}, {threshold: [0.25]});
+
+observer.observe(selected);
